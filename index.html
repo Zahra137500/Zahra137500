@@ -12,7 +12,6 @@
 <script src="./proj4js/proj4.js"></script>
 <script src="./tweenjs/tween.js"></script>
 <script src="./Qgis2threejs.js"></script>
-<script src="./threejs/loaders/GLTFLoader.js"></script>
 <script src="./dat-gui/dat.gui.min.js"></script>
 <script src="./dat-gui_panel.js"></script>
 </head>
@@ -97,26 +96,30 @@
 <!--  ВСТАВЬТЕ ВМЕСТО ЭТОЙ СТРОКИ ВЕСЬ ТЕКСТ ИЗ ФАЙЛА "SVG-логотип РУДН.txt"  -->
 
 <p style="font-size: 16px; color: #0079c1; text-indent: 5px; margin-top: 0px;"> <b> &nbsp; 3D-геопортал окрестностей Японий </b> </p></div>
-<div id="footer">
-<p style="font-size: 16px; color: #0079c1;  text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white; text-indent: 80px;">
+<div id="footer"><p style="font-size: 16px; color: #0079c1;  text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white; text-indent: 80px;">
 <b> &#169; Рабиинасаб Захра (группа ИУСМД-02-23) </b> </p></div>
 
 <!-- animation -->
 <div id="narrativebox" class="ef1">
   <div id="narbody">
-
+    <div id="nar_ca3f258f" class="narcontent">
+      
+      <img src="./data/index/img/Yamagata.jpg" width="100%">
+      
+      Shinjō (新庄市, Shinjō-shi) is a city in Yamagata Prefecture, Japan. As of 1 January 2020, the city had an estimated population of 34,937, and a population density of 160 persons per km 2. The total area of the city is 223.08 km 2.
+    </div>
   </div>
   <div id="nextbtn"></div>
 </div>
 
 <script>
 Q3D.Config.coord.latlon = true;
-Q3D.Config.viewpoint = {lookAt:{x:15686551.439018339,y:4633636.895200447,z:0.0},pos:{x:15686551.439018339,y:4629987.168200447,z:3649.7269999999553}};
+Q3D.Config.viewpoint = {lookAt:{x:15665713.640615437,y:4650659.07762026,z:0.0},pos:{x:15568688.718727406,y:4598152.456422755,z:6594.072908782347}};
 Q3D.Config.localMode = true;
 Q3D.Config.gui.customPlane = true;
 Q3D.Config.animation.enabled = true;
 Q3D.Config.northArrow.enabled = true;
-Q3D.Config.northArrow.color = 0xdc2949;
+Q3D.Config.northArrow.color = 0xe3023a;
 
 var container = document.getElementById("view"),
     app = Q3D.application,
